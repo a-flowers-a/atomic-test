@@ -1,0 +1,135 @@
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/Group1.png");
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    margin:0px;
+    padding:0px;
+    min-width: 100vw;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+hr {
+    border: 0;
+    border-bottom: 3px solid;
+    border-radius: 10px;
+    height: 0;
+    margin: 5px;
+    width: 100%;
+}
+
+.action-btn {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+}
+
+.atomic-card {
+    border-radius: 5px;
+    box-shadow: 0 2px 7px #0000007C;
+    padding: 2rem;
+}
+
+.atomic-logo {
+    width: 160px;
+    float: right;
+    margin-right: 2rem;
+}
+
+.full-img {
+    height: auto;
+    width: 100%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.justify-text{
+    text-align: justify;
+}
+
+.left-text{
+    text-align: left;
+}
+
+.normal-weight {
+    font-weight: 600;
+}
+
+.primary-div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.subtitle {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/*spacing/position*/
+.m-v-space {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.s-v-space {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.left-card {
+    height: 80%;
+    position: relative;
+    left: 100px;
+}
+.right-card {
+    height: 80%;
+    position: relative;
+    right: 100px;
+}
+
+.top-card {
+    position: relative;
+    z-index: 30;
+}
+
+.v-center-content {
+    display: flex;
+    align-items: center;
+}
+
+/*COLORS*/
+.white {
+    color: #FFFFFF;
+}
+
+.orange {
+    color: #FA4D09;
+}
+
+.blue {
+    color: #00609C;
+}
+
+.white-bg {
+    background-color: #FFFFFF;
+}
+
+.orange-bg {
+    background-color: #FA4D09;
+}
