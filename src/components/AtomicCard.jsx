@@ -7,7 +7,9 @@ function AtomicCard(props){
     const imgUrl = "../../assets/PaqueteAtomic/Group "+imgNumber+".png";
     const color = top ? "white" : "orange";
     const bgColor = top ? "orange" : "white";
+    const listColor = top ? "white" : "dark-blue";
     const topCard = top && "top-card";
+    const bulletSize = top ? "b-text" : "m-text";
     const leftCard = left && "left-card";
     const rightCard = right && "right-card";
     const gridCol = top ? 4 : 3;
@@ -48,14 +50,16 @@ function AtomicCard(props){
                     <div className={"subtitle "+ color}>{titles[cardIndex]}</div>
                 </Col>
             </Row>
-            <div className="left-text">
+            <div className={"left-text "+listColor}>
+                <ul>
                 {lists[cardIndex].map(elementList => {
                     return (<Row>
                         <Col>
-                            <div className={"normal-weight "+ color}>{elementList}</div>
+                            <li className={bulletSize}><div className="leight-weight m-text">{elementList}</div></li>
                         </Col>
                     </Row>);
                 })}
+                </ul>
             </div>
                 
         </Col>
