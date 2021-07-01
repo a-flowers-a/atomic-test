@@ -50,13 +50,20 @@ hr {
     margin-right: 2rem;
 }
 
+.b-text {
+    font-size: 35px;
+}
+
 .chevron-icon {
     margin-right: 5px;
 }
 
-.tiny-img {
-    height: auto;
-    width: 1.5rem;
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 .full-img {
@@ -68,23 +75,6 @@ hr {
     display: inline-block;
 }
 
-.m-img {
-    height: auto;
-    width: 2.5rem;
-}
-
-.b-text {
-    font-size: 35px;
-}
-
-.m-text {
-    font-size: 20px;
-}
-
-.s-text {
-    font-size: 12px;
-}
-
 .justify-text{
     text-align: justify;
 }
@@ -93,16 +83,17 @@ hr {
     text-align: left;
 }
 
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
 .leight-weight {
     font-weight: 400;
+}
+
+.m-img {
+    height: auto;
+    width: 2.5rem;
+}
+
+.m-text {
+    font-size: 20px;
 }
 
 .no-padding {
@@ -113,18 +104,22 @@ hr {
     font-weight: 600;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .primary-div {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.pointer {
-    cursor: pointer;
-}
-
 .right-text {
     text-align: right;
+}
+
+.s-text {
+    font-size: 12px;
 }
 
 .social-img {
@@ -134,6 +129,11 @@ hr {
 .subtitle {
     font-size: 30px;
     font-weight: 700;
+}
+
+.tiny-img {
+    height: auto;
+    width: 1.5rem;
 }
 
 .title {
@@ -147,20 +147,25 @@ hr {
     margin-bottom: 10vh;
 }
 
-.s-v-space {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
 .left-card {
     height: 80%;
     position: relative;
     left: 1vw;
 }
+
+.p-15-left{
+    padding-left: 15px;
+}
+
 .right-card {
     height: 80%;
     position: relative;
     right: 1vw;
+}
+
+.s-v-space {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .top-card {
@@ -173,12 +178,7 @@ hr {
     align-items: center;
 }
 
-.p-15-left{
-    padding-left: 15px;
-}
-
 /*Footer*/
-
 .footer {
     background-color: #000000;
     color: #FFFFFF;
@@ -231,8 +231,12 @@ table tr th:last-child {
 
 
 /*COLORS*/
-.white {
-    color: #FFFFFF;
+.blue {
+    color: #00609C;
+}
+
+.dark-blue {
+    color: #0A2240;
 }
 
 .orange {
@@ -243,18 +247,14 @@ table tr th:last-child {
     color: #FF2626;
 }
 
-.dark-blue {
-    color: #0A2240;
-}
-
-.blue {
-    color: #00609C;
-}
-
-.white-bg {
-    background-color: #FFFFFF;
+.white {
+    color: #FFFFFF;
 }
 
 .orange-bg {
     background-color: #FA4D09;
+}
+
+.white-bg {
+    background-color: #FFFFFF;
 }
