@@ -27,6 +27,7 @@ hr {
     background-color: #FFFFFF;
     border-radius: 20px;
     font-size: 24px;
+    height: 2.4rem;
     padding: 2px;
     text-align: center;
     width: 100%;
@@ -49,7 +50,11 @@ hr {
     margin-right: 2rem;
 }
 
-.check-img {
+.chevron-icon {
+    margin-right: 5px;
+}
+
+.tiny-img {
     height: auto;
     width: 1.5rem;
 }
@@ -63,12 +68,21 @@ hr {
     display: inline-block;
 }
 
+.m-img {
+    height: auto;
+    width: 2.5rem;
+}
+
 .b-text {
     font-size: 35px;
 }
 
 .m-text {
     font-size: 20px;
+}
+
+.s-text {
+    font-size: 12px;
 }
 
 .justify-text{
@@ -103,6 +117,14 @@ hr {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.right-text {
+    text-align: right;
 }
 
 .social-img {
@@ -211,6 +233,10 @@ table tr th:last-child {
 
 .orange {
     color: #FA4D09;
+}
+
+.red {
+    color: #FF2626;
 }
 
 .dark-blue {

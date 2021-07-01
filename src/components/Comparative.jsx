@@ -17,33 +17,33 @@ function Comparative(){
                     <tbody>
                         <tr>
                         <td className="left-text">Equipo inclusivo, honesto y auténtico</td>
-                        <td ><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
-                        <td><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
+                        <td ><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
+                        <td><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
                         </tr>
                         <tr>
                         <td className="left-text">Puntualidad es nuestro segundo nombre</td>
-                        <td><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
-                        <td><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
+                        <td><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
+                        <td><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
                         </tr>
                         <tr>
                         <td className="left-text">Siempre innovamos en nuestros productos</td>
-                        <td><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
-                        <td><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
+                        <td><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
+                        <td><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
                         </tr>
                         <tr>
                         <td className="left-text">Te ayudamos a crecer e implementar nuevos conocimientos</td>
                         <td></td>
-                        <td><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
+                        <td><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
                         </tr>
                         <tr>
                         <td className="left-text">Nos preocupamos por tu bienestar</td>
                         <td></td>
-                        <td><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
+                        <td><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
                         </tr>
                         <tr>
                         <td className="left-text">El respeto es una parte fundamental</td>
                         <td></td>
-                        <td><Image alt={'Checkmark'} className={"check-img"} src={checkMarck}/></td>
+                        <td><Image alt={'Checkmark'} className={"tiny-img"} src={checkMarck}/></td>
                         </tr>
                     </tbody>
                 </table>
