@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from './views/Landing';
+import ContactForm from './views/ContactForm';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Router>
               <Switch>
                   <Route path="/" exact component={() => <Landing />} />
-                  {/*<Route path="/wordList" exact component={() => <WordList />} />*/}
+                  <Route path="/form" exact component={() => <ContactForm />} />
               </Switch>
       </Router>
     

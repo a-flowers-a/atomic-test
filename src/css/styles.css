@@ -32,6 +32,10 @@ hr {
     width: 100%;
 }
 
+.action-btn:hover {
+    cursor: pointer;
+}
+
 .atomic-card {
     border-radius: 5px;
     box-shadow: 0 2px 7px #0000007C;
@@ -161,8 +165,11 @@ hr {
 .blue-div {
     background-color: #00609C;
     border-radius: 10%;
-    height: 100vh;
-    width: 100vw;
+    height: 170%;/*1100px;*/
+    position: absolute;
+    top: 190rem;/*455% -3500px; JUST WORKS ON DESKTOP*/
+    width: 100%;
+    z-index: -10;
 }
 
 /*TABLE*/

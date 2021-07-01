@@ -1,9 +1,11 @@
 import React from 'react';
 
 function ActionBtn(props){
-    const {text} = props;
+    const {text, clickFunc} = props;
     return (
-        <div className="action-btn normal-weight blue">
+        <div className="action-btn normal-weight blue"
+            onClick={clickFunc}
+        >
             {text}
         </div>
     );

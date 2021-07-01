@@ -16,6 +16,10 @@ function Landing(){
     const spaceDev = "../../assets/PaqueteAtomic/Group 4042.png";
     const spaceAth = "../../assets/PaqueteAtomic/Group 4043.png";
 
+    function sendTo(){
+        window.location.href = '/form';
+    }
+
     return(
         <div className="primary-div">
             <Container fluid>
@@ -49,6 +53,7 @@ function Landing(){
                             <Col sm={6}>
                                 <ActionBtn
                                     text={"¡Quiero ser parte!"}
+                                    clickFunc={sendTo}
                                 />
                             </Col>
                         </Row>
@@ -123,9 +128,9 @@ function Landing(){
                         <div className="title orange inline">ATOMIC?</div>
                     </Col>
                 </Row>
-                {/*<Row className="blue-div"></Row>*/}
-                <Row>
-                    <Col xs={12}>
+                {/*<Row className="blue-div">
+                    <Col xs={12} className="defased-col  m-v-space">*/}
+                    <Row className="blue-div"></Row>
                         <Row className="justify-content-center">
                             <Col sm={3}>
                                 <Image 
@@ -158,8 +163,8 @@ function Landing(){
                                 />
                             </Col>
                         </Row>
-                    </Col>
-                </Row>
+                    {/*</Col>
+                </Row>*/}
                 <Footer />
             </Container>
         </div>
