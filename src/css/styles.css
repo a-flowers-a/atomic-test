@@ -1,8 +1,8 @@
 body{
-    background-position: center bottom;
+    background-attachment: fixed ;
+    background-position: center;
     background-image: url("../assets/MaskGroup1_2x.png");
     background-repeat: no-repeat;
-    /*background-size: cover;*/
     font-family: 'Montserrat', sans-serif;
     height: auto;
     min-height: 100vh;

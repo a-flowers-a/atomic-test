@@ -22,7 +22,7 @@ function Landing(){
 
     return(
         <div className="primary-div">
-            <Container fluid>
+            {/*<Container fluid>*/}
                 <Row>
                     <Col xs={1}>
                         <Image 
@@ -128,45 +128,41 @@ function Landing(){
                         <div className="title orange inline">ATOMIC?</div>
                     </Col>
                 </Row>
-                {/*<Row className="blue-div">
-                    <Col xs={12} className="defased-col  m-v-space">*/}
-                    <Row className="blue-div"></Row>
-                        <Row className="justify-content-center">
-                            <Col sm={3}>
-                                <Image 
-                                    alt={'Atomic Workers'}
-                                    className={"full-img"}
-                                    src={spaceDesign}
-                                />
-                            </Col>
-                            <Col sm={3}>
-                                <Image 
-                                    alt={'Atomic Workers'}
-                                    className={"full-img"}
-                                    src={spaceDev}
-                                />
-                            </Col>
-                            <Col sm={3}>
-                                <Image 
-                                    alt={'Atomic Workers'}
-                                    className={"full-img"}
-                                    src={spaceAth}
-                                />
-                            </Col>
-                        </Row>
-                        <PerksAtomic />
-                        <Comparative />
-                        <Row className="justify-content-center m-v-space">
-                            <Col sm={3}>
-                                <ActionBtn
-                                    text={"¡Quiero ser parte!"}
-                                />
-                            </Col>
-                        </Row>
-                    {/*</Col>
-                </Row>*/}
+                <Row className="blue-div"></Row>
+                <Row className="justify-content-center">
+                    <Col sm={3}>
+                        <Image 
+                            alt={'Atomic Workers'}
+                            className={"full-img"}
+                            src={spaceDesign}
+                        />
+                    </Col>
+                    <Col sm={3}>
+                        <Image 
+                            alt={'Atomic Workers'}
+                            className={"full-img"}
+                            src={spaceDev}
+                        />
+                    </Col>
+                    <Col sm={3}>
+                        <Image 
+                            alt={'Atomic Workers'}
+                            className={"full-img"}
+                            src={spaceAth}
+                        />
+                    </Col>
+                </Row>
+                <PerksAtomic />
+                <Comparative />
+                <Row className="justify-content-center m-v-space">
+                    <Col sm={3}>
+                        <ActionBtn
+                            text={"¡Quiero ser parte!"}
+                        />
+                    </Col>
+                </Row>
                 <Footer />
-            </Container>
+            {/*</Container>*/}
         </div>
     );
 }
