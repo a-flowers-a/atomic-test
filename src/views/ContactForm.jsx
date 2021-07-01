@@ -1,7 +1,7 @@
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import { Container, Image, Row, ProgressBar, Col } from 'react-bootstrap';
+import { Image, Row, ProgressBar, Col } from 'react-bootstrap';
 import Footer from '../components/Footer';
 import FormName from '../components/Form/FormName';
 import FormTitle from '../components/Form/FormTitle';

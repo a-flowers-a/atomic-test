@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Col, Row, Table } from 'react-bootstrap';
+import { Image, Col, Row } from 'react-bootstrap';
 
 function Comparative(){
     const checkMarck = "../../assets/PaqueteAtomic/ic_check_tiny.png";

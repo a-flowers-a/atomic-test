@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Row, Button, Col, Form, InputGroup } from 'react-bootstrap';
+import React from 'react';
+import { Row, Col, Form } from 'react-bootstrap';
 import ActionBtn from '../ActionBtn';
 import { useForm, Controller } from "react-hook-form";
 
 function FormName(){
-    const { handleSubmit, control, reset, formState: { errors } } = useForm();
+    const { handleSubmit, control, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     
     function sendTo(){

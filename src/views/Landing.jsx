@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Image, Row, Col} from 'react-bootstrap';
+import { Image, Row, Col} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ActionBtn from '../components/ActionBtn';
 import AtomicCard from '../components/AtomicCard';
