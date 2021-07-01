@@ -173,6 +173,10 @@ hr {
     align-items: center;
 }
 
+.p-15-left{
+    padding-left: 15px;
+}
+
 /*Footer*/
 
 .footer {

@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
 import { Row, Button, Col, Form, InputGroup } from 'react-bootstrap';
 import ActionBtn from '../ActionBtn';
+import { useForm, Controller } from "react-hook-form";
 
 function FormName(){
-    const [validated, setValidated] = useState(false);
-  
-    const handleSubmit = (event) => {
-      const form = event.currentTarget;
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-  
-      setValidated(true);
-    };
+    const { handleSubmit, control, reset, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
     
     function sendTo(){
 
@@ -25,26 +17,30 @@ function FormName(){
                 <Row><Col className="left-text light-text m-text white">Queremos saber que eres tú, por favor ingresa los siguientes datos:</Col></Row>
                 <Row className="s-v-space">
                     <Col sm={8} className="left-text light-text m-text white">
-
-
-                    
-
-
-
-                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Form.Group hasValidation controlId="NameForm">
+                    <Form>
+                        <Form.Group controlId="NameForm">
                             <Form.Label>Nombre (s)</Form.Label>
-                            <Form.Control type="text" required isInvalid />
-                            <Form.Control.Feedback type="invalid" className="s-text normal-weight red">
-                                El nombre deberá tener mínimo 5 caracteres.
-                            </Form.Control.Feedback>
+                            <Controller
+                                control={control}
+                                defaultValue=""
+                                name="firstName"
+                                render={({ field }) => <Form.Control type="text" {...field}/>}
+                                rules={{ required: true, pattern: /.{5,12}/ }}
+                            />
+                            {errors.firstName?.type === 'required' && <Row className="s-text normal-weight red p-15-left">Nombre requerido</Row>}
+                            {errors.firstName?.type === 'pattern' && <Row className="s-text normal-weight red p-15-left">El nombre deberá tener mínimo 5 caracteres.</Row>}
                         </Form.Group>
-                        <Form.Group hasValidation controlId="NameForm">
+                        <Form.Group controlId="LastnameForm">
                             <Form.Label>Apellidos</Form.Label>
-                            <Form.Control type="text" required isInvalid />
-                            <Form.Control.Feedback type="invalid" className="s-text normal-weight red">
-                                El apellido deberá tener mínimo 5 caracteres.
-                            </Form.Control.Feedback>
+                            <Controller
+                                control={control}
+                                defaultValue=""
+                                name="lastName"
+                                render={({ field }) => <Form.Control type="text" {...field}/>}
+                                rules={{ required: true, pattern: /.{5,12}/ }}
+                            />
+                            {errors.lastName?.type === 'required' && <Row className="s-text normal-weight red p-15-left">Apellidos requeridos</Row>}
+                            {errors.lastName?.type === 'pattern' && <Row className="s-text normal-weight red p-15-left">Los apellidos deberán tener mínimo 5 caracteres.</Row>}
                         </Form.Group>
                     </Form>
                     </Col>
@@ -53,7 +49,7 @@ function FormName(){
                     <Col sm={3}>
                         <ActionBtn 
                             text={"Enviar"} 
-                            clickFunc={handleSubmit}
+                            clickFunc={handleSubmit(onSubmit)}
                             color="white"
                             bgColor="orange-bg"
                             weight="light-weight"
