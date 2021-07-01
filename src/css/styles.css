@@ -1,13 +1,14 @@
 body{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center bottom;
     background-image: url("../assets/MaskGroup1_2x.png");
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
     font-family: 'Montserrat', sans-serif;
+    height: auto;
     min-height: 100vh;
-    margin:0px;
-    padding:0px;
     min-width: 100vw;
+    margin:0;
+    padding:0;
 }
 
 h1 {
