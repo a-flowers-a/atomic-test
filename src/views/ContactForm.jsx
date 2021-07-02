@@ -9,6 +9,8 @@ import FormPhone from '../components/Form/FormPhone';
 import FormTitle from '../components/Form/FormTitle';
 import {decrement} from '../Actions';
 import FormVerif from '../components/Form/FormVerif';
+import TermsForm from '../components/Form/TermsForm';
+import AtomicHeader from '../components/AtomicHeader';
 
 function ContactForm(){
     const spaceMen = [
@@ -35,7 +37,7 @@ function ContactForm(){
         "../../assets/PaqueteAtomic/Group 4018.png"
     ];
     const titles = ["TE QUEREMOS CONOCER", "VALIDA TU CELULAR", "CÓDIGO DE VERIFICACIÓN", "TÉRMINOS Y CONDICIONES"];
-    const forms = [<FormName />, <FormPhone />, <FormVerif /> ]
+    const forms = [<FormName />, <FormPhone />, <FormVerif />, <TermsForm />];
     const [progress] = useState(20);
     const step = useSelector(state => state.stepCounter);
     const dispatch = useDispatch();
@@ -43,7 +45,8 @@ function ContactForm(){
 
     return(
         <div className="primary-div">
-            <Row className="justify-content-center m-v-space">
+            <AtomicHeader />
+            <Row className="justify-content-center">
                 <Col sm={7}>
                     <Row className="justify-content-center s-v-space">
                         <Col xs={2}>

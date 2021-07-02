@@ -58,6 +58,13 @@ hr {
     margin-right: 5px;
 }
 
+.empty-checkbox {
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    height: 18px;
+    width: 18px;
+}
+
 .float-left {
     float: left;
 }
@@ -157,6 +164,10 @@ hr {
     margin-left: 25px;
 }
 
+.m-10-left {
+    margin-left: 10px;
+}
+
 .p-15-left{
     padding-left: 15px;
 }
@@ -176,9 +187,18 @@ hr {
     margin-bottom: 2vh;
 }
 
+.terms-v-space {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .top-card {
     position: relative;
     z-index: 30;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .v-center-content {
