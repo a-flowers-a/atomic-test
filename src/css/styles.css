@@ -62,6 +62,10 @@ hr {
     margin-right: 5px;
 }
 
+.exclamation-img {
+    width: 35px;
+}
+
 .empty-checkbox {
     background-color: #FFFFFF;
     border-radius: 2px;
@@ -154,6 +158,9 @@ hr {
 }
 
 /*spacing/position*/
+.center-flex {
+    align-items: center;
+}
 .m-v-space {
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -175,6 +182,10 @@ hr {
 
 .p-15-left{
     padding-left: 15px;
+}
+
+.padding-modal {
+    padding: 10px;
 }
 
 .p-10-right {
