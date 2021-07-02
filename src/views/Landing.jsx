@@ -7,6 +7,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import PerksAtomic from '../components/PerksAtomic';
 import Footer from '../components/Footer';
 import Comparative from '../components/Comparative';
+import AtomicHeader from '../components/AtomicHeader';
 
 function Landing(){
     const spaceman = "../../assets/PaqueteAtomic/Group4032.png";
@@ -22,16 +23,8 @@ function Landing(){
 
     return(
         <div className="primary-div">
+            <AtomicHeader />
             {/*<Container fluid>*/}
-                <Row>
-                    <Col xs={1}>
-                        <Image 
-                            alt={'Atomic Logo'}
-                            className={"atomic-logo"}
-                            src={spaceman}
-                        />
-                    </Col>
-                </Row>
                 <Row className="justify-content-center m-v-space">
                     <Col sm={5}>
                         <Image 
