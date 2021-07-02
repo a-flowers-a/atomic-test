@@ -1,5 +1,5 @@
 
-# First instructions
+# Instructions
 Clone the project, install the dependencies with 'npm install' and then run with 'npm start'.
 
 ### `npm start`
