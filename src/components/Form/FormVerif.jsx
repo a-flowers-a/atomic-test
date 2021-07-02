@@ -10,10 +10,11 @@ import { faPen } from '@fortawesome/free-solid-svg-icons';
 function FormVerif(){
     const { handleSubmit, control, formState: { errors } } = useForm();
     const step = useSelector(state => state.stepCounter);
+    const phone = useSelector(state => state.phone);
     const dispatch = useDispatch();
 
     const onSubmit = data => {
-        console.log(data);
+        //console.log(data);
         if(step < 3)
             dispatch(increment());
     }//onSubmit
@@ -22,7 +23,7 @@ function FormVerif(){
         <Row>
             <Col sm={12}>
                 <Row><Col className="left-text light-text m-text white">Te enviamos un SMS al número:</Col></Row>
-                <Row><Col className="left-text light-text white">+52 {"7221489294"}<FontAwesomeIcon className="m-25-left" icon={faPen}/> </Col></Row>
+                <Row><Col className="left-text light-text white">+52 {phone}<FontAwesomeIcon className="m-25-left" icon={faPen}/> </Col></Row>
                 <Row className="s-v-space"><Col className="left-text light-text white">Ingresa el código de verificación:</Col></Row>
                 <Row className="s-v-space">
                     <Col sm={6} className="left-text light-text m-text white">

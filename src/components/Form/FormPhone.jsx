@@ -3,7 +3,7 @@ import { Row, Col, Form } from 'react-bootstrap';
 import ActionBtn from '../ActionBtn';
 import { useForm, Controller } from "react-hook-form";
 import { useDispatch, useSelector } from 'react-redux';
-import {increment} from '../../Actions';
+import {increment, setPhone} from '../../Actions';
 
 function FormPhone(){
     const { handleSubmit, control, formState: { errors } } = useForm();
@@ -12,6 +12,7 @@ function FormPhone(){
 
     const onSubmit = data => {
         console.log(data);
+        dispatch(setPhone(data.phone));
         if(step < 3)
             dispatch(increment());
     }//onSubmit

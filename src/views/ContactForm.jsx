@@ -41,7 +41,6 @@ function ContactForm(){
     const [progress] = useState(20);
     const step = useSelector(state => state.stepCounter);
     const dispatch = useDispatch();
-    console.log("step contactForm ", step);
 
     return(
         <div className="primary-div">

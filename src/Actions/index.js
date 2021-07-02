@@ -9,3 +9,10 @@ export const decrement = () => {
         type: 'DECREMENT',
     };
 };
+
+export const setPhone = (phoneNumber) => {
+    return {
+        type: 'SET_PHONE',
+        payload: phoneNumber
+    }
+};
