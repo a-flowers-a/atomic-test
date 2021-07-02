@@ -28,7 +28,7 @@ function ContactForm(){
         "../../assets/PaqueteAtomic/Group 4017.png",
         "../../assets/PaqueteAtomic/Group 4018.png"
     ];
-    const titles = ["TE QUEREMOS CONOCER", "VALIDA TU CELULAR", "CÓDIGO DE VERIFICACIÓN"];
+    const titles = ["TE QUEREMOS CONOCER", "VALIDA TU CELULAR", "CÓDIGO DE VERIFICACIÓN", "TÉRMINOS Y CONDICIONES"];
     const [progress, setProgress] = useState(20);
     const step = useSelector(state => state.stepCounter);
     const dispatch = useDispatch();
@@ -57,19 +57,19 @@ function ContactForm(){
                             <Image 
                                 alt="Number"
                                 className="tiny-img"
-                                src={step===2 ? activeSteps[2] : (step < 1 ? inactiveSteps[1] : checkmark)}
+                                src={step===2 ? activeSteps[2] : (step < 2 ? inactiveSteps[1] : checkmark)}
                             />
                         </Col>
                         <Col xs={2}>
                             <Image 
                                 alt="Number"
                                 className="tiny-img"
-                                src={step===3? activeSteps[3] : (step < 1 ? inactiveSteps[2] : checkmark)}
+                                src={step===3? activeSteps[3] : (step < 3 ? inactiveSteps[2] : checkmark)}
                             />
                         </Col>
                     </Row>
                     <Row className="justify-content-center">
-                        <Col xs={10}><ProgressBar variant="orange" now={progress}/></Col>
+                        <Col xs={10}><ProgressBar variant="orange" now={progress * (step + 1)}/></Col>
                     </Row>
                     {step>0 && <Row className="s-v-space">
                         <Col sm={2}
