@@ -5,6 +5,7 @@ import { Image, Row, ProgressBar, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Footer from '../components/Footer';
 import FormName from '../components/Form/FormName';
+import FormPhone from '../components/Form/FormPhone';
 import FormTitle from '../components/Form/FormTitle';
 import {decrement} from '../Actions';
 
@@ -29,7 +30,8 @@ function ContactForm(){
         "../../assets/PaqueteAtomic/Group 4018.png"
     ];
     const titles = ["TE QUEREMOS CONOCER", "VALIDA TU CELULAR", "CÓDIGO DE VERIFICACIÓN", "TÉRMINOS Y CONDICIONES"];
-    const [progress, setProgress] = useState(20);
+    const forms = [<FormName />, <FormPhone /> ]
+    const [progress] = useState(20);
     const step = useSelector(state => state.stepCounter);
     const dispatch = useDispatch();
     console.log("step contactForm ", step);
@@ -86,7 +88,7 @@ function ContactForm(){
                         title={titles[step]}
                         img={bigActiveSteps[step]}
                     />
-                    <FormName />
+                    {forms[step]}
                 </Col>
                 <Col sm={3}>
                     <Image 
