@@ -157,6 +157,10 @@ hr {
     padding-left: 15px;
 }
 
+.p-10-right {
+    padding-right: 10px;
+}
+
 .right-card {
     height: 80%;
     position: relative;
