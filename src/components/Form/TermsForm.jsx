@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import ActionBtn from '../ActionBtn';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useDispatch, useSelector } from 'react-redux';
-import {increment} from '../../Actions';
+import { useSelector } from 'react-redux';
 import TermsModal from './TermsModal';
 
 function TermsForm(){
     const [checked, setChecked] = useState(false);
     const [display, setDisplay] = useState(false);
     const step = useSelector(state => state.stepCounter);
-    const dispatch = useDispatch();
     const checkbox = "../../assets/PaqueteAtomic/Group 4028.png";
     
     const onSubmit = () => {
         if(checked)
         {
-            if(step < 3)
-                dispatch(increment());
+            if(step === 3)
+                window.location.href = '/success';
+            else
+                console.log("something's wrong with step at termsForm");
         }
     }//onSubmit
 

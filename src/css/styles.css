@@ -58,6 +58,10 @@ hr {
     font-size: 35px;
 }
 
+.bs-text {
+    font-size: 40px;
+}
+
 .chevron-icon {
     margin-right: 5px;
 }
@@ -107,8 +111,20 @@ hr {
     width: 2.5rem;
 }
 
+.s-margin-bottom {
+    margin-bottom: 2vw;
+}
+
+.m-margin-top {
+    margin-top: 4vw;
+}
+
 .m-text {
     font-size: 20px;
+}
+
+.ms-text {
+    font-size: 17px;
 }
 
 .no-padding {
