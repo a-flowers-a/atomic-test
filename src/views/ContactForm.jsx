@@ -46,7 +46,7 @@ function ContactForm(){
     return(
         <div className="primary-div">
             <AtomicHeader />
-            <Row className="justify-content-center">
+            <Row className="justify-content-center s-margin-bottom ">
                 <Col sm={7}>
                     <Row className="justify-content-center s-v-space">
                         <Col xs={2}>
