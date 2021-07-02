@@ -9,6 +9,7 @@ function TermsForm(){
     const [display, setDisplay] = useState(false);
     const step = useSelector(state => state.stepCounter);
     const checkbox = "../../assets/PaqueteAtomic/Group 4028.png";
+    const lock = "../../assets/PaqueteAtomic/ic_lock_24px.png"
     
     const onSubmit = () => {
         if(checked)
@@ -61,10 +62,11 @@ function TermsForm(){
                     <Row className="justify-content-end m-v-space"> 
                         <Col sm={3}>
                             <ActionBtn 
-                                text={"Enviar"} 
                                 clickFunc={onSubmit}
                                 color="white"
                                 extraClases="orange-bg m-text"
+                                icon={lock}
+                                text={"Enviar"} 
                                 weight="light-weight"
                             />
                         </Col>

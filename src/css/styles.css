@@ -29,8 +29,8 @@ hr {
     border-radius: 20px;
     font-size: 24px;
     height: 2.4rem;
+    justify-content: center;
     padding: 2px;
-    text-align: center;
     width: 100%;
 }
 
@@ -88,6 +88,10 @@ hr {
 .full-img {
     height: auto;
     width: 100%;
+}
+
+.icon-img {
+    width: .8rem;
 }
 
 .inline {
