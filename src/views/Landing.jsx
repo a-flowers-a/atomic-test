@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Row, Col} from 'react-bootstrap';
+import { Image, Row, Container, Col} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ActionBtn from '../components/ActionBtn';
 import AtomicCard from '../components/AtomicCard';
@@ -23,8 +23,8 @@ function Landing(){
 
     return(
         <div className="primary-div">
-            <AtomicHeader />
-            {/*<Container fluid>*/}
+            <Container fluid>
+                <AtomicHeader />
                 <Row className="justify-content-center m-v-space">
                     <Col sm={5}>
                         <Image 
@@ -112,6 +112,7 @@ function Landing(){
                     <Col sm={3}>
                         <ActionBtn
                             text={"¡Quiero ser parte!"}
+                            clickFunc={sendTo}
                         />
                     </Col>
                 </Row>
@@ -151,11 +152,12 @@ function Landing(){
                     <Col sm={3}>
                         <ActionBtn
                             text={"¡Quiero ser parte!"}
+                            clickFunc={sendTo}
                         />
                     </Col>
                 </Row>
                 <Footer />
-            {/*</Container>*/}
+            </Container>
         </div>
     );
 }
