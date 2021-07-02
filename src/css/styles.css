@@ -50,6 +50,10 @@ hr {
     margin-top: 1rem;
 }
 
+.bold-text {
+    font-weight: 700;
+}
+
 .b-text {
     font-size: 35px;
 }
@@ -130,6 +134,7 @@ hr {
 }
 
 .social-img {
+    cursor: pointer;
     width: 20px;
 }
 
