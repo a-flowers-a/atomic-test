@@ -5,10 +5,8 @@ import { useForm, Controller } from "react-hook-form";
 
 function FormName(){
     const { handleSubmit, control, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
-    
-    function sendTo(){
-
+    const onSubmit = data => {
+        console.log(data);
     }
 
     return(
