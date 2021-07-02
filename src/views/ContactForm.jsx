@@ -42,29 +42,29 @@ function ContactForm(){
         <div className="primary-div">
             <Row className="justify-content-center m-v-space">
                 <Col sm={7}>
-                    <Row className="s-v-space">
-                        <Col>
+                    <Row className="justify-content-center s-v-space">
+                        <Col xs={2}>
                             <Image 
                                 alt="Number"
                                 className="tiny-img"
                                 src={step === 0 ? activeSteps[0] : checkmark}
                             />
                         </Col>
-                        <Col>
+                        <Col xs={2}>
                             <Image 
                                 alt="Number"
                                 className="tiny-img"
                                 src={step===1 ? activeSteps[1] : (step < 1 ? inactiveSteps[0] : checkmark)}
                             />
                         </Col>
-                        <Col>
+                        <Col xs={2}>
                             <Image 
                                 alt="Number"
                                 className="tiny-img"
                                 src={step===2 ? activeSteps[2] : (step < 1 ? inactiveSteps[1] : checkmark)}
                             />
                         </Col>
-                        <Col>
+                        <Col xs={2}>
                             <Image 
                                 alt="Number"
                                 className="tiny-img"
@@ -72,8 +72,8 @@ function ContactForm(){
                             />
                         </Col>
                     </Row>
-                    <Row>
-                        <Col><ProgressBar now={progress}/></Col>
+                    <Row className="justify-content-center">
+                        <Col xs={10}><ProgressBar variant="danger" now={progress}/></Col>
                     </Row>
                     {step>0 && <Row className="s-v-space">
                         <Col sm={2}
