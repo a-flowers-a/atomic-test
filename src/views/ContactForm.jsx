@@ -2,9 +2,11 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Image, Row, ProgressBar, Col } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
 import Footer from '../components/Footer';
 import FormName from '../components/Form/FormName';
 import FormTitle from '../components/Form/FormTitle';
+import {decrement} from '../Actions';
 
 function ContactForm(){
     const spaceRamen = "../../assets/PaqueteAtomic/Group 4033.png";
@@ -28,14 +30,8 @@ function ContactForm(){
     ];
     const titles = ["TE QUEREMOS CONOCER", "VALIDA TU CELULAR", "CÓDIGO DE VERIFICACIÓN"];
     const [progress, setProgress] = useState(20);
-    const [step, setStep] = useState(0);
-
-    function handleStep(minus){
-        if(minus)
-            step > 0 ? setStep(step-1) : setStep(0);
-        else
-            step < 3 ? setStep(step+1) : setStep(3);
-    }//handleStep
+    const step = useSelector(state => state.stepCounter);
+    const dispatch = useDispatch();
     console.log("step contactForm ", step);
 
     return(
@@ -78,7 +74,10 @@ function ContactForm(){
                     {step>0 && <Row className="s-v-space">
                         <Col sm={2}
                             className="s-text left-text white pointer"
-                            onClick={()=>{handleStep(true);}}
+                            onClick={()=>{
+                                if(step > 0)
+                                    dispatch(decrement());
+                            }}
                         >
                             <FontAwesomeIcon className="chevron-icon" icon={faChevronLeft}/> Regresar
                         </Col>
