@@ -56,7 +56,7 @@ function FormName(){
                             text={"Enviar"} 
                             clickFunc={handleSubmit(onSubmit)}
                             color="white"
-                            bgColor="orange-bg"
+                            extraClases="orange-bg m-text"
                             weight="light-weight"
                         />
                     </Col>

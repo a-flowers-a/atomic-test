@@ -153,6 +153,10 @@ hr {
     left: 1vw;
 }
 
+.m-25-left {
+    margin-left: 25px;
+}
+
 .p-15-left{
     padding-left: 15px;
 }

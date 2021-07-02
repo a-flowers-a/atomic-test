@@ -8,9 +8,14 @@ import FormName from '../components/Form/FormName';
 import FormPhone from '../components/Form/FormPhone';
 import FormTitle from '../components/Form/FormTitle';
 import {decrement} from '../Actions';
+import FormVerif from '../components/Form/FormVerif';
 
 function ContactForm(){
-    const spaceRamen = "../../assets/PaqueteAtomic/Group 4033.png";
+    const spaceMen = [
+        "../../assets/PaqueteAtomic/Group 4033.png",
+        "../../assets/PaqueteAtomic/Group 4034.png",
+        "../../assets/PaqueteAtomic/Group 4038.png",
+    ];
     const checkmark = "../../assets/PaqueteAtomic/checkmark.png"
     const activeSteps = [
         "../../assets/PaqueteAtomic/Group 4015.png",
@@ -30,7 +35,7 @@ function ContactForm(){
         "../../assets/PaqueteAtomic/Group 4018.png"
     ];
     const titles = ["TE QUEREMOS CONOCER", "VALIDA TU CELULAR", "CÓDIGO DE VERIFICACIÓN", "TÉRMINOS Y CONDICIONES"];
-    const forms = [<FormName />, <FormPhone /> ]
+    const forms = [<FormName />, <FormPhone />, <FormVerif /> ]
     const [progress] = useState(20);
     const step = useSelector(state => state.stepCounter);
     const dispatch = useDispatch();
@@ -92,9 +97,9 @@ function ContactForm(){
                 </Col>
                 <Col sm={3}>
                     <Image 
-                        alt="Space Ramen"
+                        alt="Atomic Spaceman"
                         className="full-img"
-                        src={spaceRamen}
+                        src={step>1 ? spaceMen[step-1] : spaceMen[step]}
                     />
                 </Col>
             </Row>
