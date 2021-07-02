@@ -73,7 +73,7 @@ function ContactForm(){
                         </Col>
                     </Row>
                     <Row className="justify-content-center">
-                        <Col xs={10}><ProgressBar variant="danger" now={progress}/></Col>
+                        <Col xs={10}><ProgressBar variant="orange" now={progress}/></Col>
                     </Row>
                     {step>0 && <Row className="s-v-space">
                         <Col sm={2}
