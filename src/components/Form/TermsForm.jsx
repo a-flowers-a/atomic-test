@@ -2,20 +2,16 @@ import React, { useState } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import ActionBtn from '../ActionBtn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useForm, Controller } from "react-hook-form";
 import { useDispatch, useSelector } from 'react-redux';
 import {increment} from '../../Actions';
-import { faPen } from '@fortawesome/free-solid-svg-icons';
 
 function TermsForm(){
     const [checked, setChecked] = useState(false);
-    const { handleSubmit, control, formState: { errors } } = useForm();
     const step = useSelector(state => state.stepCounter);
     const dispatch = useDispatch();
     const checkbox = "../../assets/PaqueteAtomic/Group 4028.png";
     
-    const onSubmit = data => {
-        console.log(data);
+    const onSubmit = () => {
         if(checked)
         {
             if(step < 3)
@@ -54,7 +50,7 @@ function TermsForm(){
                     <Col sm={3}>
                         <ActionBtn 
                             text={"Enviar"} 
-                            clickFunc={handleSubmit(onSubmit)}
+                            clickFunc={onSubmit}
                             color="white"
                             extraClases="orange-bg m-text"
                             weight="light-weight"
